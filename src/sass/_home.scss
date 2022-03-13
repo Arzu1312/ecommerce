@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&family=Playball&display=swap');
+
+
+.nav-item {
+    list-style: none;
+}
+
+.home {
+    padding-top: 88px;
+    max-width: 100%;
+   
+   
+
+    .part1 {
+        position: relative;
+        // margin-top: 20px;
+        // padding-top: 50px;
+        margin-bottom: 50px;
+
+        .bg-image {
+            position: relative;
+            width: 100%;
+            height: 660px;
+          
+            .content {
+                top: 30%;
+                width: 1400px;
+                position: absolute;
+                text-align: left;
+                margin-left: 30px;
+          
+               
+               h1 {
+                font-family: 'Dancing Script', cursive;
+                font-size: 60px;
+                color: #fff;
+                
+               }
+
+
+               p {
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 32px;
+                color: #ccc;
+                font-style: italic;
+               }
+
+               .get {
+                   margin-top: 30px;
+                  
+                a {
+                    text-decoration: none;
+                    border: 1px solid goldenrod;
+                    color: #fff;
+                    font-weight: 600;
+                    padding: 8px 30px;
+                    transition: .5s ease all;
+
+
+                    &:hover {
+                        background-color: goldenrod;
+                        transition: .5s ease all;
+                        color: black;
+                    }
+
+
+                    
+                }
+              }
+            }
+            
+        }
+
+       .container {
+
+        .main {
+            
+            margin-top: 100px;
+            margin-bottom: 50px;
+            width: 100%;
+            // float: left;
+            position: relative;
+            border: 1px solid rgb(238, 173, 8);
+            border-radius: 5px;
+
+            .block-content {
+                margin: 0;
+                padding: 25px 20px;
+
+                .icons {
+                  display: flex;
+                   
+                    padding: 0 10px;
+                   
+
+                    a {
+                       color: rgb(238, 173, 8);
+                       font-size: 32px;
+                        text-decoration: none;
+                    }
+
+                    .icon-caption {        
+                        margin: 0;
+                        margin-left: 20px;
+                        color: rgb(106, 112, 117);
+                       
+                    }
+
+                   
+                }
+            }
+        }
+
+
+        
+       }
+    }
+   
+
+        .products {
+           padding-top: 50px ;
+           
+
+            .title {
+               
+                text-align: center;
+
+                    h1 {
+                        
+                        position: relative;
+                        font-family: 'Lobster', cursive;
+                        color: goldenrod;
+
+                        &::before {
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        bottom: 0;
+                        width: 100px;
+                        height: 2px;
+                        background-color: goldenrod; 
+                        margin-left: -50px;
+                        }
+                    }
+            }
+
+        }
+
+        .part2  {
+              position: relative;
+              margin-top: 50px;
+            //   padding-top: 50px;
+              margin-bottom: 50px;
+              
+              
+            .row {
+              display: flex;
+               flex-direction: row; 
+
+
+              .image-element {
+                  
+                margin-top: 50px;
+                  width: 657px;
+                  height: 300px;
+
+                  .img-hover-zoom--colorize {
+                      position: relative;
+                        overflow: hidden;
+                        box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 20px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        transition: transform .5s, filter 1.5s ease-in-out;
+                        filter: grayscale(100%);
+                        
+                      }
+
+                     &:hover img {
+                        filter: grayscale(0);
+                        transform: scale(1.1);
+                      }
+
+                      .caption {
+                          top: 40%;
+                          left: 10%;
+                        position: absolute;
+                        z-index: 2;
+
+                        h4 {
+                            font-style: italic;
+                            font-weight: bold;
+
+                            
+                        }
+
+
+                        .shop {
+                        margin-top: 20px;
+                            a {
+                                text-decoration: none;
+                                border: 1px solid goldenrod;
+                                color: black;
+                                font-weight: 600;
+                                padding: 6px 20px;
+                                transition: .5s ease all;
+        
+        
+                                &:hover {
+                                    color: #fff;
+                                    background-color: black;
+                                    border: 1px solid black;
+                                    transition: .5s ease all;
+                                }
+        
+        
+                                
+                            }
+                          }
+
+
+
+                 }
+
+                        .left-caption {
+                          text-align: right;
+                          right: 10%;
+                        }
+                  }
+                  
+
+                
+                 
+                
+              }
+                
+                
+            }
+        }
+
+        .part3 {
+            
+              padding-top: 100px;
+                           
+                .title {
+                    margin-top: 40px;
+                    text-align: center;
+
+                    h1 {
+                        position: relative;
+                        font-family: 'Lobster', cursive;
+                        color: goldenrod;
+
+                        &::before {
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        bottom: 0;
+                        width: 100px;
+                        height: 2px;
+                        background-color: goldenrod; 
+                        margin-left: -50px;
+                        }
+                    }
+
+                    p {
+                        margin-top: 30px;
+                        color: rgb(106, 112, 117);
+                    }
+
+                }
+                .row {
+
+                    .slideshow {
+                        overflow: hidden;
+                        display: flex;
+                        height: 300px;
+                        width: 1300px;
+                        margin: 30px auto 0 0;
+                    
+                   
+
+                        img {
+                            height: 120px;
+                            min-width: 200px;
+                            margin-left: 100px;
+                            border-radius: 20px;
+                            animation: slide 15s linear infinite;
+                            box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 20px;
+                        }
+                                        
+                    
+                     }
+                   
+                   
+                }
+            
+        }
+
+        
+    
+
+    .part4 {
+        background-color: rgb(218, 165, 32);
+        padding-top: 50px;
+    padding-bottom: 50px;
+
+        .container {
+            text-align: center;
+
+            .row {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+                .subscribe-title {
+                    text-align: center;            
+                    padding: 5px 0 15px 0;
+                   
+
+                    h1 {
+                        font-size: 32px;
+                        padding-right: 20px;
+                        font-weight: bold;
+                        
+
+                        i {
+                            margin-right: 10px;
+                        }
+                    }
+
+                    p {
+                        font-size: 18px;
+                        padding: 0 20px;
+                        text-transform: capitalize;
+                        margin: 0;
+                    }
+                }
+
+                .subscribe-item {
+                    text-align: center;
+
+                    form {
+
+                        .form-group {
+                            margin-bottom: 20px;
+
+                            .form-control {
+                                border-color: #fff;
+                                background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+                                 border-style: none none solid;
+                                 border-width: 0 0 1px;
+                                 border-radius: 0;
+                                 box-shadow: none;
+                                 margin: 10px 0;
+                                 height: 45px;
+                                 padding: 0;
+                                 display: block;
+                                width: 100%;
+                                 font-size: 14px;
+                                 line-height: 1.42857143;
+
+                                 &::placeholder {
+                                  
+                                        color: black;
+                                    
+                                 }
+                            }
+
+                            .subscribe {
+                                margin-top: 20px;
+                                padding: 8px 30px;
+                                top: 0;
+                                right: 0;
+                                color: #fff;
+                                border: 2px solid #000;
+                                background-color: #000;
+                                border-top-right-radius: 3px;
+                                border-bottom-right-radius: 3px;
+                                font-size: 20px;
+                                font-weight: 600;
+
+                                
+                            }
+                        }
+                    }
+                }
+            
+        }
+    }
+}
+
+
+// .slider-frame {
+//     border-radius: 30px;
+//     box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 20px;
+
+//     .slider-slide {
+        
+//         img {
+//             border-radius: 30px;
+            
+//         }
+//     }
+// }
+
+// .slider {
+//     background-image: none;
+ 
+// }
+
+// .slider::before {
+//     position: inherit;
+// }
+
+
+
+
+@keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1500px, 0, 0); 
+    }
+  }
+
+
+  @media only screen and (max-width: 767px) {
+    .bg-image {
+        height: 450px!important;
+        
+
+        .content {
+
+            h1 {
+                font-size: 44px!important;
+            }
+
+            p {
+                font-size: 24px!important;
+            }
+
+            .get {
+
+                a {
+                    padding: 8px 20px!important;
+                    font-size: 14px!important;
+                }
+            }
+        }
+
+
+    }
+
+    
+    .part3 {
+        padding-top: 20px!important;
+
+        .title {
+            margin-top: 10px!important;
+        }
+    }
+    
+     
+    .subscribe-title {
+
+        h1 {
+            font-size: 20px!important;
+            
+        }
+
+        p {
+            font-size: 16px!important;
+        }
+    }
+
+    .subscribe-item {
+
+        .subscribe {
+            padding: 5px 20px!important;
+            font-size: 15px!important;
+        }
+    }
+   
+
+    .image-element {
+        margin-bottom: 20px!important;
+    }
+  
+}
+
+@media (max-width:1400px) {
+    .image-element {
+        margin-bottom: 90px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .popular {
+       display: none;
+    }
+    .page-content {
+        display: none;
+    }
+}
+
+
+
+ 

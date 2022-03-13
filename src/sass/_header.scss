@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+
+body {
+  overflow-x: hidden;
+}
+
+span {
+  font-size: 40px;
+}
+
+.flag-icon {
+  width: 24px;
+  height: 24px;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 14px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.round {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // background-color: #ccc;
+  background-image: linear-gradient(midnightblue, rebeccapurple);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.round:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .round {
+  // background-color: #19a2c1;
+  background-image: linear-gradient(aqua, skyblue);
+}
+
+input:focus + .round {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .round:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.round {
+  border-radius: 34px;
+}
+
+.round:before {
+  border-radius: 50%;
+}
+.switch-checkbox {
+  padding: 10px;
+}
+
+
+
+
+  .header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    // max-width: 100%;  
+   
+  }  
+  
+  nav {   
+    padding-left: 40px ;
+    padding-right: 30px;
+    box-shadow: 1px 1px 1px rgba(238, 238, 238, 0.144);
+  }
+
+.navbar-nav {
+
+  .nav-link {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    overflow: hidden;
+      text-decoration: none;
+      color: #eee;
+      font-size: 18px;
+      padding: 1rem 2rem !important;
+    transition: transform 1s ease;
+
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 0.5px;
+      left: 0;
+      bottom: 0;
+      background: goldenrod;
+      transform: scale(0, 1);
+      transform-origin: 0% 100%;
+      transition: transform 1s ease
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 0.5px;
+      right: 0;
+      top: 0;
+      background: goldenrod;
+      transform: scale(0, 1);
+      transform-origin: 0% 100%;
+      transition: transform 1s ease
+    }
+
+    &:hover {
+         color: goldenrod;  
+        &::after {
+            transform: scale(1, 1); 
+        }
+
+        &::before {
+          transform: scale(1, 1); 
+      }
+    }
+  }
+
+  
+}
+
+
+
+.navbar-brand {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Playball', cursive;
+    background-image: linear-gradient(315deg, #ac7319 0%, #ffdd00 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.right-side, .sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+
+  .basket {
+    margin-right: 20px;
+    position: relative;
+    
+
+    .basket-link {
+      text-decoration: none!important;
+      font-size: 26px;
+      color: rgba(218, 165, 32, 0.322);
+      transition: .3s;
+
+      &:hover {
+        color: goldenrod;
+        transition: .3s;
+      }
+
+      span {
+        font-size: 10px;
+        left: 13px;
+        position: absolute;
+        background: #d43811;
+        color: #fff;
+        top: 0;
+        min-width: 17px;
+        padding: 0 2px;
+        line-height: 16px;
+        right: auto;
+        border-radius: 12px;
+        text-align: center;
+    }
+    }
+  }
+
+
+  .user {
+    margin-left: 10px;
+    margin-right: 15px;
+
+    .user-link {
+      text-decoration: none!important;
+      font-size: 28px;
+      color: rgba(218, 165, 32, 0.322);
+      transition: .3s;
+
+
+      &:hover {
+        color: goldenrod;
+        transition: .3s;
+      }
+    }
+  }
+
+  .dropdown {
+    list-style: none;
+
+    .dropdown-menu {
+      margin-top: 20px;
+      padding-left: 0;
+    }
+
+    .dropdown-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      text-decoration: none;
+      color: #ccc;
+
+      i {
+        margin-left: 5px;
+        font-size: 12px;
+      }
+
+      img {
+        margin-right: 5px;
+      }
+    }
+
+  }
+}
+
+.btn-link {
+  outline: 0;
+  color: rgba(218, 165, 32, 0.322);
+  transition: .3s;
+
+
+  &:hover {
+    color: goldenrod;
+    transition: .3s;
+  }
+
+  &:focus {
+    box-shadow: none;
+
+  }
+} 
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    text-align: left !important;
+  }
+
+  .navbar-brand {
+  
+    font-size: 40px;
+
+  }
+  
+
+  .right-side {
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+}
+
+
+
+@media (max-width: 1200px) {
+  .collapse {
+    opacity:0!important;
+  }
+}
+
+@media (max-width: 1350px) {
+    .nav-link {
+      font-size: 12px!important;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,251 @@
+.about {
+    padding-top: 95px;
+    padding-bottom: 80px;
+
+    .part1 {
+           padding-top: 50px;
+           margin-bottom: 80px;
+        .container {
+
+           .about-title {
+               text-align: center !important;
+
+               h1 {
+                   position: relative;
+                   color: goldenrod;
+                   font-family: "Playball", cursive;
+                   font-size: 48px;
+
+                   &::before {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    width: 100px;
+                    height: 2px;
+                    background-color: goldenrod; 
+                    margin-left: -50px;
+                    }
+               }
+
+               p {
+                width: 70%;
+                margin: auto;
+                margin-top: 30px;
+                color: rgb(106, 112, 117);
+            }
+           } 
+
+
+           .owl-theme {
+               margin-top: 80px;
+               margin-left: 20px;
+
+               .hvrbox {
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+                max-width: 90%;
+                height: auto;
+                border-radius: 10px;
+
+                &:hover {
+                    
+                    .hvrbox-layer_top {
+                        opacity: 1;
+                    }
+
+                    .hvrbox-layer_slideleft {
+                        -moz-transform: translateX(0);
+                        -webkit-transform: translateX(0);
+                        -ms-transform: translateX(0);
+                        transform: translateX(0);
+                    }
+                }
+
+                img {
+                    max-width: 100%;
+                }
+
+                .hvrbox-layer_bottom {
+                    display: block;
+                }
+
+                .hvrbox-layer_top {
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #1abc9c62;
+                    color: #fff;
+                    padding: 15px;
+                    -moz-transition: all 0.4s ease-in-out 0s;
+                    -webkit-transition: all 0.4s ease-in-out 0s;
+                    -ms-transition: all 0.4s ease-in-out 0s;
+                    transition: all 0.4s ease-in-out 0s;
+                }
+
+                .hvrbox-layer_slideleft {
+                    -moz-transform: translateX(100%);
+                    -webkit-transform: translateX(100%);
+                    -ms-transform: translateX(100%);
+                    transform: translateX(100%);
+
+                    .hvrbox-text {
+                        text-align: center;
+                        font-size: 18px;
+                        display: inline-block;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        -moz-transform: translate(-50%, -50%);
+                        -webkit-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+
+                       
+                
+               
+                    }
+                }
+            }
+        }
+        }
+    }
+
+    .part2 {
+        padding-top: 30px;
+        padding-bottom: 100px;
+
+        .container {
+
+            .about-title {
+                
+                text-align: center !important;
+ 
+                h1 {
+                    position: relative;
+                    color: goldenrod;
+                    font-family: "Playball", cursive;
+                    font-size: 48px;
+ 
+                    &::before {
+                     content: "";
+                     position: absolute;
+                     left: 50%;
+                     bottom: 0;
+                     width: 100px;
+                     height: 2px;
+                     background-color: goldenrod; 
+                     margin-left: -50px;
+                     }
+                }
+            }
+
+            .row {
+                margin-top: 80px;
+                margin-left: 40px;
+
+                .item {
+
+                    img {
+                       border: 5px solid gold;
+                        border-radius: 50%;
+                    }
+
+                    p {
+                        margin-top: 30px;
+                        color: goldenrod;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.icon-button {
+	background-color: white;
+	border-radius: 3.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2.0rem;
+	height: 3rem;
+	line-height: 3rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 3rem;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 2rem;
+	margin: -1.5rem;
+}
+.twitter span {
+	background-color: #4099ff;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+.instagram span {
+	background-color: #db5a3c;
+}
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	font-size: 20px;
+	left: 35%;
+	line-height: 3rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	
+	z-index: 10;
+}
+.icon-button .fa-twitter {
+	color: #4099ff;
+}
+.icon-button .fa-facebook-f {
+	color: #3B5998;
+}
+.icon-button .fa-instagram {
+	color: #db5a3c;
+}
+.icon-button:hover .fa-twitter,
+.icon-button:hover .fa-facebook-f,
+.icon-button:hover .fa-instagram {
+	color: white;
+}

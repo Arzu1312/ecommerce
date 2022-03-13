@@ -1,0 +1,28 @@
+{
+    "counts": [
+        {
+            "id": "001",
+            "label": "Happy clients",
+            "number": "9000",
+            "duration": "1"
+        },
+        {
+            "id": "002",
+            "label": "Goods delivered",
+            "number": "20000",
+            "duration": "4"
+        },
+        {
+            "id": "003",
+            "label": "Awards  won",
+            "number": "1000",
+            "duration": "4"
+        },
+        {
+            "id": "004",
+            "label": "Business hours",
+            "number": "100000",
+            "duration": "4"
+        }
+    ]
+}

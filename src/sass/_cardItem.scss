@@ -1,0 +1,287 @@
+.card {
+    position: relative;
+    width: 300px;
+    height: 480px;
+    background: #212121;
+    border-radius: 20px;
+    overflow: hidden;
+
+    &:hover {
+
+        &::before {
+            top: -70%;
+            transform: skewY(390deg);
+        }
+           
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        width: 100%;
+        height: 100%;
+        background: #ffce00;
+        transform: skewY(345deg);
+        transition: 0.5s;
+    }
+
+    &::after {
+        content: "SPORT";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-weight: 600;
+        font-size: 6.1em;
+        color: rgba(0, 0, 0, 0.1);
+    }
+
+    .imgBox {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        z-index: 1;
+    }
+
+    .contentBox {
+        position: relative;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 2;
+
+        h3 {
+            font-size: 18px;
+            color: white;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p {
+            color: crimson;
+        }
+
+        .price {
+            font-size: 24px;
+            color: white;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .buy {
+            position: relative;
+            top: 100px;
+            opacity: 0;
+            padding: 10px 30px;
+            margin-top: 15px;
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+            background: #ffce00;
+            border-radius: 30px;
+            border: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.5s;
+
+          
+            
+        }
+      }
+}
+
+.card:hover .contentBox .buy {
+    top: 0;
+    opacity: 1;
+  }
+
+.product {
+   position: relative;
+    width: 250px;
+    height: 250px;
+    transition: 1s;
+
+}
+
+.card:hover .imgBox .product {
+    transition:  1s;
+//       top: 50%;
+//   left: 50%;
+      transform: translate(10%, 10%) rotate(30deg) ;
+  }
+
+
+
+.main-container {
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+    .total-title {
+        color: grey;
+    }
+} 
+
+
+.card-list {
+    margin-top: 10px;
+    padding: 20px;   
+    border: 1px solid goldenrod;
+
+
+    // a{
+       
+    //     margin-left: 20px;
+       
+    // }
+
+    img {
+        float: left;
+    }
+
+    .card-info {
+        margin-left: 20px;
+        margin-bottom: 20px;
+
+        a {
+            text-decoration: none;
+            color: #666;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .desc, .price{
+            margin-top: 10px;
+        }
+
+        .price {
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+}
+
+.carditem-title {
+    text-align: center;
+    margin-bottom: 30px;
+
+    h1 {
+        position: relative;
+        font-family: 'Lobster', cursive;
+        color: goldenrod;
+
+        &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 100px;
+        height: 2px;
+        background-color: goldenrod; 
+        margin-left: -50px;
+        }
+    }
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: goldenrod;
+    width: 50%;
+    // margin-left: 20px;
+    
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+
+    a {
+        text-decoration: none;
+        text-align: center;
+        color: white;
+    }
+}
+
+
+.total {
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid goldenrod;
+
+    h2 {
+        color: #666;
+    }
+
+   .button {
+       margin-top: 20px;
+
+    .clear {
+        color: crimson;
+        text-decoration: none;
+        padding: 3px 10px;
+        border: 1px solid crimson;
+        cursor: pointer;
+    }
+
+    .buy {
+        text-decoration: none;
+        padding: 3px 10px;
+        border: 1px solid green;
+        color: green;
+        cursor: pointer;
+
+    }
+   }
+}
+
+
+@media (max-width:767px) {
+    .desc {
+        font-size: 12px;
+    }
+
+    .card-info {
+
+        .price {
+            font-size: 16px!important;
+        }
+
+        .title {
+            font-size: 16px!important;
+        }
+    }
+
+
+    .total {
+
+
+        .clear {
+            color: crimson;
+            text-decoration: none;
+            padding:3px 10px!important;
+            border: 1px solid crimson;
+            cursor: pointer;
+          
+        }
+    
+        .buy {
+            text-decoration: none;
+            padding: 3px 10px!important;
+            border: 1px solid green;
+            color: green;
+            cursor: pointer;
+           
+
+    
+        }
+    }
+}

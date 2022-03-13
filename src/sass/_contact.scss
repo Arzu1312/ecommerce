@@ -1,0 +1,167 @@
+.contact {
+    position: relative;
+    padding-top: 95px;
+   
+
+    .google-map {
+        margin-top: 70px;
+    }
+
+    .contact-title {
+        padding-top: 50px;
+        text-align: center !important;
+ 
+                h1 {
+                    position: relative;
+                    color: goldenrod;
+                    font-family: "Playball", cursive;
+                    font-size: 48px;
+ 
+                    &::before {
+                     content: "";
+                     position: absolute;
+                     left: 50%;
+                     bottom: 0;
+                     width: 100px;
+                     height: 2px;
+                     background-color: goldenrod; 
+                     margin-left: -50px;
+                     }
+                }
+
+    }
+
+     .col-md-5 {
+        margin-top: 80px;
+
+        h1 {
+            text-align: center;
+            font-style: italic;
+          color:goldenrod;
+          margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: #666;
+           
+        }
+     }
+
+     .form {
+         margin: 80px 0 1.5rem;
+
+         .form-row {
+            margin: 0 -.75rem;
+            max-width: none;
+            width: auto;
+
+            .form-field:nth-child(odd) {
+                clear: left;
+            }
+
+            .form-field {
+                display: block;
+                margin: 0 0 2rem;
+                width: 50%;
+                padding-left: .75rem;
+                padding-right: .75rem;
+                float: left;
+                max-width: none;
+
+                .form-label {
+                    color: #666;
+                    cursor: pointer;
+                    display: block;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    margin-bottom: .5rem;
+                }
+
+                .form-input {
+                    appearance: none;
+                    background-color: #fff;
+                    border-color: #8f8f8f;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-radius: 4px;
+                    color: #666;
+                    display: block;
+                    font-family: inherit;
+                    font-size: 1rem;
+                    height: 3rem;
+                    margin: 0;
+                    padding: .75rem 1rem;
+                    width: 100%;
+                }
+            }
+         }
+
+         .form-field {
+            display: block;
+            margin: 0 0 2rem;
+            max-width: none;
+
+            .form-label {
+                color: #666;
+                cursor: pointer;
+                display: block;
+                font-size: 1rem;
+                line-height: 1.5;
+                margin-bottom: .5rem;
+            }
+
+            textarea {
+                height: auto;
+                appearance: none;
+                background-color: #fff;
+                border-color: #8f8f8f;
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 4px;
+                color: #666;
+                display: block;
+                font-family: inherit;
+                font-size: 1rem;
+                -webkit-font-smoothing: antialiased;
+                margin: 0;
+                padding: .75rem 1rem;
+                transition: border-color .1s ease-out;
+                width: 100%;
+                min-height: 50px;
+                overflow: auto;
+            }
+         }
+
+         .form-actions {
+            margin-top: 1.5rem;
+            margin: 0 auto;
+            max-width: 90rem;
+            width: 100%;
+            display: block;
+            text-align: center;
+
+            .button {
+                min-width: 180px;
+                margin-bottom: 0;
+                width: auto;
+                border-radius: 40px;
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 600;
+                padding: .5rem 2.5rem;
+                background-color: goldenrod;
+                border: 1px solid goldenrod;
+                color: #fff;
+                transition: 0.5s ease ;
+
+
+                &:hover {
+                    border: 1px solid rgb(145, 106, 8);
+                    background-color: rgb(145, 106, 8);
+                    transition: 0.5s ease;
+                }
+            }
+         }
+    }
+}
